@@ -10,7 +10,7 @@ public class NotifierService {
 	public NotifierService(INotifierService[] notifiers) {
 		this.notifiers = notifiers;		
 	}
-	
+	//metodo que envia los mensajes segun la instancia que corresponde.
 	public void Notify(String mensaje) {
 		for(INotifierService notifier: notifiers) {
 			notifier.enviarMensaje(mensaje);
